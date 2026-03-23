@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: sundayproject
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/sunday_db?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: 여기에_비밀번호_입력
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+server:
+  port: 8081
